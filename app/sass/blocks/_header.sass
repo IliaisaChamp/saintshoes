@@ -1,1 +1,65 @@
+.header
+  position: relative
+  padding: 96px 0 20px
+  border-bottom: 1.5px solid $theme-color
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  &__phone
+    display: block
+    font-size: 20px
+    line-height: 33px
+  &__adress
+    font-size: 20px
+    line-height: 33px
+  &__working
+    font-size: 20px
+  &__panel
+    display: flex
+    justify-content: space-between
 
+.user-list
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__item
+    margin-right: 30px
+    &:last-child
+      margin-right: 0
+  &__location
+    width: 25px
+    height: 31px
+  &__user
+    width: 24px
+    height: 27px
+  &__favorites
+    width: 30px
+    height: 26px
+  &__basket
+    width: 35px
+    height: 25px
+
+.search
+  display: flex
+  position: relative
+  height: 39px
+  width: 176px
+  overflow: hidden
+  border: 1px solid #000000
+  border-radius: 20px
+  &__input
+    width: 138px
+    height: 100%
+    padding: 5px 10px
+    font-size: 12px
+    line-height: 15px
+    color: #000000
+    border: none
+    &:focus
+      outline: 0
+.logo
+  position: absolute
+  top: 39px
+  left: 50%
+  transform: translate(-50%, 0)
