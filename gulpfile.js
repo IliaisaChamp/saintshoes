@@ -46,7 +46,7 @@ let {
   uglify = require('gulp-uglify-es').default,
   imagemin = require('gulp-imagemin'),
   webp = require('gulp-webp'),
-  webpHtml = require('gulp-webp-html'),
+  // webpHtml = require('gulp-webp-html'),
   webpCss = require('gulp-webpcss'),
   svgSprite = require('gulp-svg-sprite'),
   ttf2woff = require('gulp-ttf2woff'),
@@ -70,7 +70,7 @@ function browserSync() {
 function html() {
   return src(path.src.html)
     .pipe(fileinclude())
-    .pipe(webpHtml())
+    // .pipe(webpHtml())
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream())
 }

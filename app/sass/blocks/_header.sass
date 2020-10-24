@@ -18,6 +18,8 @@
   &__panel
     display: flex
     justify-content: space-between
+  &__search
+    margin-right: 30px
 
 .user-list
   display: flex
@@ -41,23 +43,38 @@
     height: 25px
 
 .search
-  display: flex
   position: relative
   height: 39px
   width: 176px
   overflow: hidden
   border: 1px solid #000000
   border-radius: 20px
+  transition: $animation07
   &__input
-    width: 138px
+    width: 95%
     height: 100%
-    padding: 5px 10px
+    padding: 5px 5px 5px 10px
     font-size: 12px
     line-height: 15px
     color: #000000
     border: none
     &:focus
       outline: 0
+    &--active
+      width: 95%
+  &__img
+    position: absolute
+    bottom: 9px
+    right: 21px
+    width: 17px
+    height: 19px
+    transition: $animation07
+    &--active
+      stroke: $theme-color
+  &--active
+    width: 628px
+    border-color: $theme-color
+
 .logo
   position: absolute
   top: 39px

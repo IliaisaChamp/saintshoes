@@ -1,0 +1,113 @@
+.breadcrumbs
+  height: 91px
+.nav
+  position: relative
+  &__inner
+    display: flex
+    align-items: flex-end
+    transition: $animation07
+    &--hidden
+      opacity: 0
+  &__title
+    display: inline-block
+    padding-right: 50px
+    margin-right: 10px
+    font-weight: 700
+    font-size: 22px
+    line-height: 33px
+    border-bottom: 2.5px solid $theme-color
+  &__line
+    pos
+    width: 234px
+    height: 0px
+    background: $theme-color
+    border-bottom: 2.5px solid $theme-color
+  &-btn
+    width: 47px
+    cursor: pointer
+    display: inline-flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &:hover > &__line
+      background-color: $theme-color
+      transition: $animation05
+    &__line
+      width: 47px
+      height: 4px
+      background-color: #454141
+      margin-bottom: 4px
+      &:last-child
+        margin-bottom: 0px
+
+.menu
+  position: absolute
+  top: 0
+  left: -100%
+  width: 436px
+  z-index: 9
+  transition: $animation07
+  background-color: #ffffff
+  &__top
+    padding: 0px 11px 40px 141px
+  &--active
+    left: 0%
+  &__list
+    padding-left: 35px
+    padding-right: 71px
+  &__item
+    position: relative
+    margin-bottom: 18px
+    &:not(:first-child)::after
+      display: inline-block
+      position: absolute
+      content: ''
+      width: 20px
+      height: 20px
+      right: 0
+      border-top: 1px solid $theme-color
+      border-right: 1px solid $theme-color
+      transform: rotate(45deg)
+    &:hover::after
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 11px
+      height: 11px
+      transition: $animation05
+  &__link
+    font-size: 16px
+    line-height: 28px
+    &:hover
+      transition: $animation05
+      text-shadow: 3px 7px 0 rgba(238, 90, 63, 0.5)
+
+.close-btn
+  width: 30px
+  height: 30px
+  position: absolute
+  right: 15px
+  top: 5px
+  cursor: pointer
+  &:hover::after
+    background-color: $theme-color
+    transition: $animation05
+  &:hover::before
+    background-color: $theme-color
+    transition: $animation05
+  &::after
+    content: ""
+    width: 39px
+    height: 3.5px
+    background-color: #454141
+    position: absolute
+    transform-origin: left
+    transform: rotate(45deg)
+  &::before
+    content: ""
+    width: 39px
+    height: 3.5px
+    background-color: #454141
+    position: absolute
+    transform-origin: left
+    transform: rotate(-45deg)
+    bottom: -1px
