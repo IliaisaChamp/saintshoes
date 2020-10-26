@@ -26,6 +26,7 @@
   justify-content: space-between
   align-items: center
   &__item
+    position: relative
     margin-right: 30px
     &:last-child
       margin-right: 0
@@ -38,9 +39,29 @@
   &__favorites
     width: 30px
     height: 26px
+    
   &__basket
+    position: relative
     width: 35px
     height: 25px
+    &-ball
+      display: block
+      position: absolute
+      width: 20px
+      height: 20px
+      top: -22px
+      right: 8px
+      transition: $animation07
+    &::after
+      position: absolute
+      content: ''
+      background-image: url(../img/basket-ball.svg)
+      background-repeat: no-repeat
+      width: 20px
+      height: 20px
+      top: -22px
+      right: 8px
+      transition: $animation07      
 
 .search
   position: relative

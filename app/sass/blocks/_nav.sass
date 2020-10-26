@@ -42,19 +42,21 @@
 
 .menu
   position: absolute
-  top: 0
+  padding-left: 141px
+  padding-top: 26px
+  top: -26px
   left: -100%
   width: 436px
+  height: 584px
   z-index: 9
   transition: $animation07
   background-color: #ffffff
   &__top
-    padding: 0px 11px 40px 141px
+    padding: 0px 11px 40px 0
   &--active
     left: 0%
   &__list
-    padding-left: 35px
-    padding-right: 71px
+    padding-right: 14px
   &__item
     position: relative
     margin-bottom: 18px
@@ -85,8 +87,8 @@
   width: 30px
   height: 30px
   position: absolute
-  right: 15px
-  top: 5px
+  right: 11px
+  top: 26px
   cursor: pointer
   &:hover::after
     background-color: $theme-color
