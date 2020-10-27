@@ -641,30 +641,11 @@ body {
   height: 25px;
 }
 
-.user-list__basket-ball {
-  display: block;
+.user-list__basket--full {
+  display: none;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: -22px;
+  top: -23px;
   right: 8px;
-  -webkit-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-.user-list__basket::after {
-  position: absolute;
-  content: '';
-  background-image: url(../img/basket-ball.svg);
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  top: -22px;
-  right: 8px;
-  -webkit-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
-  transition: all 0.7s ease;
 }
 
 .search {
@@ -811,7 +792,7 @@ body {
   left: -100%;
   width: 436px;
   height: 584px;
-  z-index: 9;
+  z-index: 100;
   -webkit-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -850,12 +831,20 @@ body {
 }
 
 .menu__item:hover::after {
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 11px;
   height: 11px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.menu-dropdown {
+  display: none;
+  margin-left: 84px;
+}
+
+.menu-dropdown--active {
+  display: block;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -931,6 +920,7 @@ body {
 }
 
 .about__inner {
+  position: relative;
   height: 503px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -941,6 +931,7 @@ body {
 }
 
 .about__info {
+  z-index: 15;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   max-width: 568px;
@@ -972,8 +963,153 @@ body {
 }
 
 .gallery {
-  position: relative;
-  top: -61px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.gallery__item {
+  position: absolute;
+  z-index: 10;
+  opacity: 0.7;
+  -webkit-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+
+.gallery__item-1 {
+  width: 380px;
+  top: -220px;
+  left: -142px;
+  z-index: 11;
+}
+
+.gallery__item-1--hover {
+  top: -35px;
+  left: 50%;
+  width: 304px;
+  -webkit-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+  opacity: 1;
+}
+
+.gallery__item-2 {
+  width: 748px;
+  top: -155px;
+  left: 180px;
+  z-index: 12;
+}
+
+.gallery__item-2--hover {
+  top: -62px;
+  width: 345px;
+  left: 792px;
+  opacity: 1;
+}
+
+.gallery__item-3 {
+  top: -208px;
+  right: -97px;
+  width: 325px;
+}
+
+.gallery__item-3--hover {
+  top: -50px;
+  left: 956px;
+  width: 226px;
+  opacity: 1;
+  z-index: 13;
+}
+
+.gallery__item-4 {
+  top: 330px;
+  left: -142px;
+  z-index: 13;
+}
+
+.gallery__item-4--hover {
+  top: -44px;
+  left: 1102px;
+  opacity: 1;
+  z-index: 14;
+}
+
+.gallery__item-5 {
+  top: 9px;
+  left: -38px;
+  width: 285px;
+  z-index: 12;
+}
+
+.gallery__item-5--hover {
+  top: 115px;
+  left: 573px;
+  width: 206px;
+  opacity: 1;
+}
+
+.gallery__item-6 {
+  opacity: 0.9;
+  width: 299px;
+  top: -155px;
+  left: 630px;
+  z-index: 12;
+}
+
+.gallery__item-6--hover {
+  top: 170px;
+  left: 866px;
+  width: 190px;
+  opacity: 1;
+  z-index: 15;
+}
+
+.gallery__item-7 {
+  top: 144px;
+  width: 255px;
+  right: -141px;
+  z-index: 13;
+}
+
+.gallery__item-7--hover {
+  top: 105px;
+  right: -172px;
+  width: 197px;
+  opacity: 1;
+  z-index: 11;
+}
+
+.gallery__item-8 {
+  top: 202px;
+  left: 124px;
+  width: 450px;
+  z-index: 13;
+}
+
+.gallery__item-8--hover {
+  top: 290px;
+  left: 645px;
+  width: 268px;
+  opacity: 1;
+  z-index: 16;
+}
+
+.gallery__item-9 {
+  top: 172px;
+  right: 112px;
+  width: 520px;
+  z-index: 7;
+}
+
+.gallery__item-9--hover {
+  top: 259px;
+  right: -192px;
+  width: 340px;
+  opacity: 1;
 }
 
 .gallery-grid {
@@ -1100,6 +1236,7 @@ body {
 }
 
 .new-products__title {
+  display: block;
   width: 176px;
   font-weight: 700;
   font-size: 24px;
@@ -1107,6 +1244,13 @@ body {
   text-align: center;
   margin: 0 auto 40px auto;
   border-bottom: 2.5px solid #EE5A3F;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.new-products__title:hover {
+  color: #EE5A3F;
 }
 
 .products-slider__btn {
@@ -1325,6 +1469,95 @@ body {
   text-align: center;
   margin: 0 auto 60px auto;
   border-bottom: 2.5px solid #EE5A3F;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sale-section__title:hover {
+  color: #EE5A3F;
+}
+
+.footer {
+  padding-bottom: 8px;
+  background-color: #C4C4C4;
+  border-top: 1.5px solid #EE5A3F;
+}
+
+.footer-inner {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer-menu {
+  position: relative;
+  width: 786px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1.5px solid #EE5A3F;
+}
+
+.footer-menu__item {
+  width: 270px;
+}
+
+.footer-menu__item:first-child {
+  margin-right: 137px;
+}
+
+.footer-menu__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  margin-right: 7px;
+}
+
+.footer-menu__list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer-contacts {
+  padding: 41px 0 7px 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-contacts__list {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer-contacts__icon {
+  margin-right: 10px;
+}
+
+.footer-bottom__info-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 .webp .products-item__wrapper--new::after { background-image: url(../img/new.webp); }

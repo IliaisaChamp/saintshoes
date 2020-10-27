@@ -3054,6 +3054,34 @@ $(document).ready(function () {
     speed: 800,
     slidesToShow: 1,
   });
+
+  $('.products-item__basket').click(function () {
+    if ($('.user-list__basket--full').css("display", "none"))
+      $('.user-list__basket--full').css("display", "block");
+    else
+      $('.user-list__basket--full').css("display", "none");
+  });
+
+  // ВЫПАДАЮЩЕЕ МЕНЮ
+  $('.menu__item--hover').click(function (event) {
+    $('.menu-dropdown').toggleClass('menu-dropdown--active');
+    if ($('.menu-dropdown').hasClass(!'menu-dropdown--active'))
+      event.preventDefault();
+    else
+      !event.preventDefault();
+  });
+
+  $('.about, .nav, .breadcrumbs').hover(function () {
+    $('.gallery__item-1').toggleClass('gallery__item-1--hover');
+    $('.gallery__item-2').toggleClass('gallery__item-2--hover');
+    $('.gallery__item-3').toggleClass('gallery__item-3--hover');
+    $('.gallery__item-4').toggleClass('gallery__item-4--hover');
+    $('.gallery__item-5').toggleClass('gallery__item-5--hover');
+    $('.gallery__item-6').toggleClass('gallery__item-6--hover');
+    $('.gallery__item-7').toggleClass('gallery__item-7--hover');
+    $('.gallery__item-8').toggleClass('gallery__item-8--hover');
+    $('.gallery__item-9').toggleClass('gallery__item-9--hover');
+  });
 });
 
 

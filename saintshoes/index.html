@@ -76,16 +76,16 @@
                 /></a>
               </li>
               <li class="user-list__item">
-                <a class="user-list__link" href="#"
-                  ><img
-                    class="user-list__img user-list__basket"
-                    src="./img/basket.svg"
+                <a class="user-list__link" href="#">
+                  <img
+                    class="user-list__basket--full"
+                    src="./img/icon-ball.svg"
                     alt="Icon: basket"
                   />
                   <img
-                    class="user-list__basket-ball"
-                    src="./img/basket-ball.svg"
-                    alt="Icon: ball"
+                    class="user-list__img user-list__basket"
+                    src="./img/basket.svg"
+                    alt="Icon: basket"
                   />
                 </a>
               </li>
@@ -126,8 +126,22 @@
                 <li class="menu__item">
                   <a class="menu__link" href="#">Баскетбольные кроссовки</a>
                 </li>
-                <li class="menu__item">
+                <li class="menu__item menu__item--hover">
                   <a class="menu__link" href="#">Баскетбольная форма</a>
+                  <ul class="menu-dropdown">
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Майки</a>
+                    </li>
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Шорты</a>
+                    </li>
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Компрессионное белье</a>
+                    </li>
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Разминочная форма</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="menu__item">
                   <a class="menu__link" href="#">Спортивная одежда</a>
@@ -148,7 +162,7 @@
     <!-- /.nav -->
 
     <section class="about">
-      <div class="container">
+      <div class="container about__container">
         <div class="about__inner">
           <div class="about__info">
             <h1 class="about__title">
@@ -179,74 +193,16 @@
           </div>
           <!-- /.about__info -->
           <div class="gallery">
-            <div class="gallery-grid">
-              <div class="gallery-grid__item--1">
-                <img
-                  class="gallery-grid__img"
-                  src="./img/gallery-1.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="gallery-grid__item--2">
-                <img
-                  class="gallery-grid__img"
-                  src="./img/gallery-2.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="gallery-grid__item--3">
-                <img
-                  class="gallery-grid__img"
-                  src="./img/gallery-3.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="gallery-grid__item--4">
-                <img
-                  class="gallery-grid__img"
-                  src="./img/gallery-4.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="gallery-grid__item--5">
-                <img
-                  class="gallery-grid__img"
-                  src="./img/gallery-5.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="gallery-grid__item--6">
-                <img
-                  class="gallery-grid__img"
-                  src="./img/gallery-6.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="gallery-grid__item--7">
-                <img
-                  class="gallery-grid__img"
-                  src="./img/gallery-7.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="gallery-grid__item--8">
-                <img
-                  class="gallery-grid__img"
-                  src="./img/gallery-8.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="gallery-grid__item--9">
-                <img
-                  class="gallery-grid__img"
-                  src="./img/gallery-9.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- /.about-gallery__grid -->
+            <img class="gallery__item gallery__item-1" src="./img/gallery-1.jpg" alt="" />
+            <img class="gallery__item gallery__item-2" src="./img/gallery-2.jpg" alt="" />
+            <img class="gallery__item gallery__item-3" src="./img/gallery-3.jpg" alt="" />
+            <img class="gallery__item gallery__item-4" src="./img/gallery-4.jpg" alt="" />
+            <img class="gallery__item gallery__item-5" src="./img/gallery-5.jpg" alt="" />
+            <img class="gallery__item gallery__item-6" src="./img/gallery-6.jpg" alt="" />
+            <img class="gallery__item gallery__item-7" src="./img/gallery-7.jpg" alt="" />
+            <img class="gallery__item gallery__item-8" src="./img/gallery-8.jpg" alt="" />
+            <img class="gallery__item gallery__item-9" src="./img/gallery-9.jpg" alt="" />
           </div>
-          <!-- /.gallery -->
         </div>
         <!-- /.about__inner -->
       </div>
@@ -302,7 +258,7 @@
     <section class="new-products">
       <div class="container">
         <div class="new-products__inner">
-          <h2 class="new-products__title">Новинки</h2>
+          <a class="new-products__title" href="#">Новинки</a>
           <div class="products-slider">
             <div class="products-slider__item">
               <div class="products-item__wrapper products-item__wrapper--new">
@@ -672,6 +628,114 @@
       <!-- /.container -->
     </section>
     <!-- /.sale-section -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-menu">
+            <nav class="footer-menu__item">
+              <h3 class="footer-menu__title">каталог</h3>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#"
+                    >Баскетбольные кроссовки</a
+                  >
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#"
+                    >Разминочная форма для баскетбола</a
+                  >
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Баскетбольная форма</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Компрессионное белье</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Спортивная одежда</a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="footer-menu__item">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Доставка</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Оплата</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Контакты</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Скидки</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.footer-menu -->
+          <div class="footer-contacts">
+            <div class="footer-contacts__item">
+              <ul class="footer-contacts__list">
+                <li class="footer-contacts__list-item">
+                  <a class="footer-contacts__link" href="tel:+78122427571"
+                    >+7 (812) 242 7571</a
+                  >
+                </li>
+                <li class="footer-contacts__list-item">
+                  <a class="footer-contacts__link" href="#"
+                    >СПб, Левашовский пр. 11/7</a
+                  >
+                </li>
+                <li class="footer-contacts__list-item">
+                  <a
+                    class="footer-contacts__link"
+                    href="mailto:info@saintshoes.ru"
+                    >info@saintshoes.ru</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-contacts__item">
+              <a class="footer-contacts__icon-link" href="#"
+                ><img
+                  class="footer-contacts__icon"
+                  src="./img/icon-instagram.svg"
+                  alt=""
+              /></a>
+              <a class="footer-contacts__icon-link" href="#"
+                ><img
+                  class="footer-contacts__icon"
+                  src="./img/icon-fb.svg"
+                  alt=""
+              /></a>
+              <a class="footer-contacts__icon-link" href="#"
+                ><img
+                  class="footer-contacts__icon"
+                  src="./img/icon-vk.svg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <!-- /.footer-contacts -->
+        </div>
+        <!-- /.footer-inner -->
+        <div class="footer-bottom">
+          <div class="footer-bottom__info">
+            <p class="footer-bottom__info-text">
+              © SaintShoes- интернет магазин баскетбольных кроссовок и
+              экипировки в Санкт-Петербурге. Доставка по всей России, 2020
+            </p>
+          </div>
+          <!-- /.footer-bottom__info -->
+        </div>
+        <!-- /.footer-bottom -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
 
     <script src="js/script.min.js"></script>
   </body>

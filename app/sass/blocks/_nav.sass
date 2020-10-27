@@ -48,7 +48,7 @@
   left: -100%
   width: 436px
   height: 584px
-  z-index: 9
+  z-index: 100
   transition: $animation07
   background-color: #ffffff
   &__top
@@ -71,10 +71,15 @@
       border-right: 1px solid $theme-color
       transform: rotate(45deg)
     &:hover::after
-      top: 50%
-      transform: translate(-50%, -50%)
+      // top: 50%
       width: 11px
       height: 11px
+      transition: $animation05
+  &-dropdown
+    display: none
+    margin-left: 84px
+    &--active
+      display: block
       transition: $animation05
   &__link
     font-size: 16px
