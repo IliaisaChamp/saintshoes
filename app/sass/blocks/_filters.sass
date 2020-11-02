@@ -1,0 +1,114 @@
+.catalog
+  &-filters
+    &__inner
+      display: flex
+      flex-wrap: wrap
+      padding-bottom: 60px
+    &__list
+      width: 250px
+      &-title
+        position: relative
+        padding: 10px 10px 7px 10px
+        border: 2.5px solid $theme-color
+        height: 50px
+        width: 250px
+        text-align: center
+        font-weight: normal
+        font-size: 20px
+        line-height: 33px
+        cursor: pointer
+        &::after
+          position: absolute
+          content: ""
+          background-image: url(../img/arrow-vertical.svg)
+          background-repeat: no-repeat
+          background-position: center
+          top: 50%
+          transform: translateY(-50%)
+          right: 12px
+          width: 16px
+          height: 9px
+      &-link
+        display: block
+        height: 50px
+        width: 250px
+        border: 2.5px solid $theme-color
+        border-top: none
+        padding: 10px 10px 7px 10px
+        font-weight: normal
+        font-size: 20px
+        line-height: 33px
+        &:hover
+          background-color: $theme-color
+          color: #ffffff
+
+.catalog-filters__list
+  &-dropdown
+    opacity: 0
+    height: 50px
+    position: relative
+    top: -48px
+    padding-top: 50px
+    z-index: 99
+    cursor: pointer
+    &--visible
+      display: block
+      opacity: 1
+      height: 250px
+      // overflow-y: scroll
+
+.filters__list-dropdown.filters__list-dropdown--visible .catalog-filters__list-title::after
+  transform: rotate(180deg)
+  transition: $animation05
+
+.jq-checkbox, .jq-radio
+  border: 1.5px solid $theme-color
+  background: none
+  width: 45px
+  height: 45px
+  margin: 0
+  box-shadow: none
+
+.jq-checkbox, .jq-radio.focused
+  border: 1.5px solid $theme-color
+  background-color: $theme-color
+  color: #ffffff
+  transition: $animation05
+
+.jq-checkbox input, .jq-radio input
+  width: 100%
+  height: 100%
+
+.jq-radio.checked .jq-radio__div
+  width: 100%
+  height: 100%
+  background: none
+  margin: 0
+  box-shadow: none
+
+.catalog-filters
+  &__size
+    margin-right: 30px
+    margin-bottom: 15px
+    position: relative
+    display: inline-block
+    &:nth-child(3n+0)
+      margin-right: 0
+    &-item
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      padding: 28px 25px
+      padding-bottom: 0
+      border: 2.5px solid $theme-color
+      border-top: none
+    &-number
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      font-weight: normal
+      font-size: 20px
+      line-height: 33px
+      z-index: 100
+      cursor: pointer

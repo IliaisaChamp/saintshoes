@@ -45,9 +45,9 @@ let {
   rename = require('gulp-rename'),
   uglify = require('gulp-uglify-es').default,
   imagemin = require('gulp-imagemin'),
-  webp = require('gulp-webp'),
+  // webp = require('gulp-webp'),
   // webpHtml = require('gulp-webp-html'),
-  webpCss = require('gulp-webpcss'),
+  // webpCss = require('gulp-webpcss'),
   svgSprite = require('gulp-svg-sprite'),
   ttf2woff = require('gulp-ttf2woff'),
   ttf2woff2 = require('gulp-ttf2woff2'),
@@ -93,7 +93,6 @@ function css() {
         cascade: true
       })
     )
-    .pipe(webpCss({}))
     .pipe(dest(path.build.css))
     .pipe(clean_css())
     .pipe(
@@ -127,11 +126,6 @@ function js() {
 
 function images() {
   return src(path.src.img)
-    .pipe(
-      webp({
-        quality: 70
-      })
-    )
     .pipe(dest(path.build.img))
     .pipe(src(path.src.img))
     .pipe(

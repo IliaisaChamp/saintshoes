@@ -1,0 +1,104 @@
+.aside-item
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  width: 100%
+  height: 100%
+  cursor: pointer
+  outline: none
+  &__wrapper
+    position: relative
+    width: 400px
+    height: 305px
+    &--new::after
+      position: absolute
+      content: ''
+      top: 0
+      right: 0
+      width: 76px
+      height: 78px
+      background-image: url(../img/new.png)
+      background-repeat: no-repeat
+      z-index: 10
+      animation-name: rotation
+      animation-duration: 5s
+      animation-iteration-count: infinite
+      animation-timing-function: linear
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    &-wrapper
+      width: 250px
+      height: 250px
+      margin-right: 50px
+  &__info
+    display: flex
+    justify-content: space-between
+    width: 100%
+  &__text
+    max-width: 172px
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    display: -webkit-box
+    overflow: hidden
+    text-overflow: ellipsis
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+  &__cost
+    display: flex
+    flex-direction: column
+  &__price
+    font-weight: bold
+    font-size: 22px
+    line-height: 33px
+    color: $theme-color
+    &--old
+      color: #000000
+      background-image: url(../img/price-old.svg)
+      background-repeat: no-repeat
+    &--new
+      color: $theme-color
+
+.catalog
+  &__aside
+    padding: 10px 40px 56px 40px
+    &-title
+      width: 176px
+      font-weight: 700
+      font-size: 24px
+      line-height: 39px
+      text-align: center
+      margin: 0 auto 60px auto
+      border-bottom: 2.5px solid $theme-color
+      transition: $animation05
+      &:hover
+        color: $theme-color
+
+.aside
+  &-slider
+    height: 100%
+    &__item
+      width: 400px !important
+.slick-list
+  height: 100%
+
+.aside-slider__btn
+  width: 80px
+  height: 80px
+  background-color: transparent
+  cursor: pointer
+  outline: none
+  border: none
+  z-index: 10
+  &-down
+    position: absolute
+    bottom: 56px
+    right: 50%
+    transform: rotate(90deg) translateY(-50%)
+  &-top
+    position: absolute
+    top: -50px
+    left: 50%
+    transform: rotate(90deg) translateY(50%)

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>New Project</title>
+    <title>Saintshoes- баскетбольный магазин</title>
 
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
@@ -101,19 +101,18 @@
     <section class="breadcrumbs"></section>
     <!-- /.breadcramps -->
 
-    <div class="nav">
+    <div class="nav__wrapper">
+     <div class="nav">
       <div class="container">
-        <div class="nav__inner">
+         <div class="nav__inner">
           <p class="nav__title">Каталог товаров</p>
           <div class="nav-btn">
             <div class="nav-btn__line"></div>
             <div class="nav-btn__line"></div>
             <div class="nav-btn__line"></div>
           </div>
-          <!-- <div class="nav__line"></div> -->
         </div>
-        <nav class="menu">
-          <div class="container-menu">
+          <nav class="menu">
             <div class="menu__top">
               <p class="nav__title">Каталог товаров</p>
               <div class="close-btn"></div>
@@ -154,8 +153,9 @@
                 </li>
               </ul>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
+        </div>
       </div>
       <!-- /.container -->
     </div>
@@ -188,7 +188,6 @@
               Предлагаем возможность возврата, и экспресс доставку по всей
               России.
             </p>
-            <p class="about__text"></p>
             <p class="about__text"></p>
           </div>
           <!-- /.about__info -->
@@ -258,7 +257,7 @@
     <section class="new-products">
       <div class="container">
         <div class="new-products__inner">
-          <a class="new-products__title" href="#">Новинки</a>
+          <a href="#"><h2 class="new-products__title">Новинки</h2></a>
           <div class="products-slider">
             <div class="products-slider__item">
               <div class="products-item__wrapper products-item__wrapper--new">
@@ -431,7 +430,8 @@
     <!-- /.new-products -->
 
     <section class="banner">
-      <div class="banner-slider">
+      <div class="banner-container">
+        <div class="banner-slider">
         <a class="banner-slider__item" href="#">
           <img
             class="banner-slider__img"
@@ -453,6 +453,7 @@
             alt="Image: banner"
           />
         </a>
+        </div>
       </div>
       <!-- /.banner-slider -->
     </section>

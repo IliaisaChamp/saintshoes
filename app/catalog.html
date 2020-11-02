@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Saintshoes- баскетбольный магазин</title>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="#">
+          <img class="logo__img" src="./img/logo.png" alt="Image: logo" />
+        </a>
+        <div class="header__inner">
+          <div class="header__info">
+            <a class="header__phone" href="tel:+78122427571"
+              >+7 (812) 242 7571</a
+            >
+            <p class="header__adress">СПб, Левашовский пр. 11/7</p>
+            <p class="header__working">Пн-Пт: 11-21ч, Сб-Вс: 10-19ч</p>
+          </div>
+
+          <div class="header__panel">
+            <form class="search header__search" action="#">
+              <input class="search__input" type="search" />
+              <svg
+                class="search__img"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="black"
+              >
+                <path
+                  d="M9 17.549C13.4183 17.549 17 13.9142 17 9.43044C17 4.94669 13.4183 1.31189 9 1.31189C4.58172 1.31189 1 4.94669 1 9.43044C1 13.9142 4.58172 17.549 9 17.549Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.9999 19.5786L14.6499 15.1642"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </form>
+
+            <ul class="user-list">
+              <li class="user-list__item">
+                <a class="user-list__link" href="#"
+                  ><img
+                    class="user-list__img user-list__location"
+                    src="./img/location.svg"
+                    alt="Icon: location"
+                /></a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#"
+                  ><img
+                    class="user-list__img user-list__user"
+                    src="./img/user.svg"
+                    alt="Icon: user"
+                /></a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#"
+                  ><img
+                    class="user-list__img user-list__favorites"
+                    src="./img/favorites.svg"
+                    alt="Icon: favorites"
+                /></a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">
+                  <img
+                    class="user-list__basket--full"
+                    src="./img/icon-ball.svg"
+                    alt="Icon: basket"
+                  />
+                  <img
+                    class="user-list__img user-list__basket"
+                    src="./img/basket.svg"
+                    alt="Icon: basket"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.header__inner -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__list-item">
+            <a class="breadcrumbs__list-link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <span class="breadcrumbs__list-link">Баскетбольные кроссовки</span>
+          </li>
+        </ul>
+        <!-- /.breadcrumbs-list -->
+      </div>
+    </section>
+    <!-- /.breadcramps -->
+
+    <div class="nav__wrapper">
+      <div class="nav">
+        <div class="container">
+          <div class="nav__inner">
+            <p class="nav__title">Каталог товаров</p>
+            <div class="nav-btn">
+              <div class="nav-btn__line"></div>
+              <div class="nav-btn__line"></div>
+              <div class="nav-btn__line"></div>
+            </div>
+          </div>
+          <nav class="menu">
+            <div class="menu__top">
+              <p class="nav__title">Каталог товаров</p>
+              <div class="close-btn"></div>
+            </div>
+            <div class="menu__list">
+              <ul>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Sale</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Баскетбольные кроссовки</a>
+                </li>
+                <li class="menu__item menu__item--hover">
+                  <a class="menu__link" href="#">Баскетбольная форма</a>
+                  <ul class="menu-dropdown">
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Майки</a>
+                    </li>
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Шорты</a>
+                    </li>
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Компрессионное белье</a>
+                    </li>
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Разминочная форма</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Спортивная одежда</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Аксессуары</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Информация</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.nav -->
+
+    <section class="catalog">
+      <h1 class="catalog__title">Баскетбольные кроссовки</h1>
+      <div class="catalog__container">
+        <aside class="catalog__aside">
+          <a href=""><h2 class="catalog__aside-title">Распродажа</h2></a>
+          <div class="aside-slider">
+            <div class="aside-slider__item">
+              <div class="aside-item__wrapper">
+                <a class="aside-item" href="#">
+                  <div class="aside-item__img-wrapper">
+                    <img
+                      class="aside-item__img"
+                      src="./img/content/sale-1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="aside-item__cost">
+                    <p class="aside-item__price aside-item__price--old">
+                      2 490 ₽
+                    </p>
+                    <p class="aside-item__price aside-item__price--new">
+                      2 190 ₽
+                    </p>
+                  </div>
+                  <div class="aside-item__info">
+                    <p class="aside-item__text">
+                      Кофта Long Sleeved Nike pro top
+                    </p>
+                  </div>
+                </a>
+                <!-- /.aside-item -->
+              </div>
+              <!-- /.aside-item__wrapper -->
+            </div>
+            <!-- /.aside__slider-item -->
+
+            <div class="aside-slider__item">
+              <div class="aside-item__wrapper">
+                <a class="aside-item" href="#">
+                  <div class="aside-item__img-wrapper">
+                    <img
+                      class="aside-item__img"
+                      src="./img/content/sale-2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="aside-item__cost">
+                    <p class="aside-item__price aside-item__price--old">
+                      2 530 ₽
+                    </p>
+                    <p class="aside-item__price aside-item__price--new">
+                      2 490 ₽
+                    </p>
+                  </div>
+                  <div class="aside-item__info">
+                    <p class="aside-item__text">Кепка Nets</p>
+                  </div>
+                </a>
+                <!-- /.aside-item -->
+              </div>
+              <!-- /.aside-item__wrapper -->
+            </div>
+            <!-- /.aside__slider-item -->
+
+            <div class="aside-slider__item">
+              <div class="aside-item__wrapper">
+                <a class="aside-item" href="#">
+                  <div class="aside-item__img-wrapper">
+                    <img
+                      class="aside-item__img"
+                      src="./img/content/sale-3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="aside-item__cost">
+                    <p class="aside-item__price aside-item__price--old">
+                      14 490 ₽
+                    </p>
+                    <p class="aside-item__price aside-item__price--new">
+                      8 990 ₽
+                    </p>
+                  </div>
+                  <div class="aside-item__info">
+                    <p class="aside-item__text">Nike Wmns Joyride Optik</p>
+                  </div>
+                </a>
+                <!-- /.aside-item -->
+              </div>
+              <!-- /.aside-item__wrapper -->
+            </div>
+            <!-- /.aside__slider-item -->
+
+            <div class="aside-slider__item">
+              <div class="aside-item__wrapper">
+                <a class="aside-item" href="#">
+                  <div class="aside-item__img-wrapper">
+                    <img
+                      class="aside-item__img"
+                      src="./img/content/sale-4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="aside-item__cost">
+                    <p class="aside-item__price aside-item__price--old">
+                      2 490 ₽
+                    </p>
+                    <p class="aside-item__price aside-item__price--new">
+                      2 190 ₽
+                    </p>
+                  </div>
+                  <div class="aside-item__info">
+                    <p class="aside-item__text">
+                      Футболка Nike pro cool compression
+                    </p>
+                  </div>
+                </a>
+                <!-- /.aside-item -->
+              </div>
+              <!-- /.aside-item__wrapper -->
+            </div>
+            <!-- /.aside__slider-item -->
+
+            <div class="aside-slider__item">
+              <div class="aside-item__wrapper">
+                <a class="aside-item" href="#">
+                  <div class="aside-item__img-wrapper">
+                    <img
+                      class="aside-item__img"
+                      src="./img/content/sale-5.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="aside-item__cost">
+                    <p class="aside-item__price aside-item__price--old">
+                      14 490 ₽
+                    </p>
+                    <p class="aside-item__price aside-item__price--new">
+                      8 990 ₽
+                    </p>
+                  </div>
+                  <div class="aside-item__info">
+                    <p class="aside-item__text">
+                      Nike Wmns Joyride Optik Pure Platinum
+                    </p>
+                  </div>
+                </a>
+                <!-- /.aside-item -->
+              </div>
+              <!-- /.aside-item__wrapper -->
+            </div>
+            <!-- /.aside__slider-item -->
+          </div>
+        </aside>
+        <!-- /.catalog__acide -->
+        <div class="catalog-main">
+          <div class="catalog-filters">
+            <form action="" class="catalog-filters__inner">
+              <ul class="catalog-filters__list">
+                <li class="catalog-filters__list-title">Сортировка</li>
+                <ul class="catalog-filters__list-dropdown">
+                  <li class="catalog-filters__list-item">
+                    <a href="" class="catalog-filters__list-link"
+                      >Сначала популярные</a
+                    >
+                  </li>
+                  <li class="catalog-filters__list-item">
+                    <a href="" class="catalog-filters__list-link">Сначала новые</a>
+                  </li>
+                  <li class="catalog-filters__list-item">
+                    <a href="" class="catalog-filters__list-link">Сначало дешевле</a>
+                  </li>
+                  <li class="catalog-filters__list-item">
+                    <a href="" class="catalog-filters__list-link">Сначало дороже </a>
+                  </li>
+                </ul>
+              </ul>
+              <!-- /.catalog-filters__list -->
+
+              <ul class="catalog-filters__list">
+                <li class="catalog-filters__list-title">Размер</li>
+                <ul class="catalog-filters__list-dropdown">
+                  <li class="catalog-filters__size-item">
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">7</p>
+                      <input type="radio" name="" value="7">
+                    </label>
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">7,5</p>
+                      <input type="radio" name="" value="7,5">
+                    </label>
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">8</p>
+                      <input type="radio" name="" value="8">
+                    </label>
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">8,5</p>
+                      <input type="radio" name="" value="8,5">
+                    </label>
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">9</p>
+                      <input type="radio" name="" value="9">
+                    </label>
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">9,5</p>
+                      <input type="radio" name="" value="9,5">
+                    </label>
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">10</p>
+                      <input type="radio" name="" value="10">
+                    </label>  
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">10,5</p>
+                      <input type="radio" name="" value="10,5">
+                    </label>
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">11</p>
+                      <input type="radio" name="" value="11">
+                    </label>
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">11,5</p>
+                      <input type="radio" name="" value="11,5">
+                    </label>
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">12</p>
+                      <input type="radio" name="" value="12">
+                    </label>
+
+                    <label class="catalog-filters__size">
+                      <p class="catalog-filters__size-number">13</p>
+                      <input type="radio" name="" value="13">
+                    </label>
+                  </li>
+                </ul>
+              </ul>
+              <!-- /.catalog-filters__list -->
+
+            </form>
+            <!-- /.catalog-filters__inner -->
+          </div>
+          <!-- /.catalog-filters -->
+
+          <div class="catalog-holder">
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Kyrie Flytrap</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">7 690 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Nike PG 2</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">7 690 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Nike PG 2.5</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">8 990 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-4.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Jordan 33 Future of flight</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">15 290 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Nike Hyperdunk X low</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">10 490 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-6.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Nike Hyperdunk ‘08</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">10 490 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-7.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Nike Hyperdunk X</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">11 490 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-8.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Nike Lebron XVI</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">15 290 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-9.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Nike Lebron Soldier XII SFG</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">11 490 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-10.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Air Jordan XXXII Low</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">13 990 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-11.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">
+                    Nike Kyrie 5 X Rokit All Star
+                  </p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">11 690 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+
+            <div class="catalog-item__wrapper">
+              <button class="catalog-item__favorite"></button>
+              <button class="catalog-item__basket">В корзину</button>
+              <a class="catalog-item" href="#">
+                <div class="catalog-item__img-wrapper">
+                  <img
+                    class="catalog-item__img"
+                    src="./img/content/catalog-12.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog-item__info">
+                  <p class="catalog-item__text">Nike Kyrie 5</p>
+                  <div class="catalog-item__cost">
+                    <p class="catalog-item__price">10 990 ₽</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /.catalog-item__wrapper -->
+          </div>
+          <!-- /.catalog-holder -->
+
+          <button class="catalog__button-dropdown">Загрузить еще</button>
+        </div>
+        <!-- /.catalog-main -->
+      </div>
+      <!-- /.catalog-container -->
+    </section>
+    <!-- /.catalog -->
+
+    <section class="catalog-about">
+      <div class="container">
+        <div class="catalog-about__inner">
+          <div class="catalog-about__info">
+            <p class="catalog-about__text">
+              Баскетбольные кроссовки являются одной из важных частей униформы
+              баскетболистов. Как важна хорошая разминка перед игрой, также и
+              важен выбор и качество кроссовок. Такие компании как Nike, Adidas,
+              Reebok делают коллаборации со звездами баскетбольного мира.
+              <br />
+              <br />
+              Как только на арену вышел Майкл Джордан, компания Nike почти сразу
+              подписала с ним контракт и выпустила линейку баскетбольных
+              кроссовок с его именем. Прошло уже почти 30 лет, и не только
+              баскетболисты, но и танцоры, а также любители стильно и удобно
+              одеваться, желают отхватить себе новенькую пару легендарных
+              кроссовок.
+              <br />
+              <br />
+              В Saint Shoes представлены оригинальные кроссовки на любой вкус.
+              Также мы тщательно следим за новинками и трендами.
+              <br />
+              <br />
+              Ну, а если вы не нашли интересующую вас модель или размер
+              кроссовок, то скорее нажимайте на кнопку “Предзаказ” или звоните
+              по номеру +7 (812) 242 7571.
+            </p>
+          </div>
+          <!-- /.catalog-about__info -->
+          <div class="gallery">
+            <img
+              class="sneakers-gallery__item sneakers-gallery__item-1"
+              src="./img/catalog-gallery-1.jpg"
+              alt=""
+            />
+            <img
+              class="sneakers-gallery__item sneakers-gallery__item-2"
+              src="./img/catalog-gallery-2.jpg"
+              alt=""
+            />
+            <img
+              class="sneakers-gallery__item sneakers-gallery__item-3"
+              src="./img/catalog-gallery-3.png"
+              alt=""
+            />
+            <img
+              class="sneakers-gallery__item sneakers-gallery__item-4"
+              src="./img/catalog-gallery-4.png"
+              alt=""
+            />
+            <img
+              class="sneakers-gallery__item sneakers-gallery__item-5"
+              src="./img/catalog-gallery-5.png"
+              alt=""
+            />
+            <img
+              class="sneakers-gallery__item sneakers-gallery__item-6"
+              src="./img/catalog-gallery-6.png"
+              alt=""
+            />
+            <img
+              class="sneakers-gallery__item sneakers-gallery__item-7"
+              src="./img/catalog-gallery-7.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- /.catalog-about__inner -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.catalog-about -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-menu">
+            <nav class="footer-menu__item">
+              <h3 class="footer-menu__title">каталог</h3>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#"
+                    >Баскетбольные кроссовки</a
+                  >
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#"
+                    >Разминочная форма для баскетбола</a
+                  >
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Баскетбольная форма</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Компрессионное белье</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Спортивная одежда</a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="footer-menu__item">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Доставка</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Оплата</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Контакты</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Скидки</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.footer-menu -->
+          <div class="footer-contacts">
+            <div class="footer-contacts__item">
+              <ul class="footer-contacts__list">
+                <li class="footer-contacts__list-item">
+                  <a class="footer-contacts__link" href="tel:+78122427571"
+                    >+7 (812) 242 7571</a
+                  >
+                </li>
+                <li class="footer-contacts__list-item">
+                  <a class="footer-contacts__link" href="#"
+                    >СПб, Левашовский пр. 11/7</a
+                  >
+                </li>
+                <li class="footer-contacts__list-item">
+                  <a
+                    class="footer-contacts__link"
+                    href="mailto:info@saintshoes.ru"
+                    >info@saintshoes.ru</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-contacts__item">
+              <a class="footer-contacts__icon-link" href="#"
+                ><img
+                  class="footer-contacts__icon"
+                  src="./img/icon-instagram.svg"
+                  alt=""
+              /></a>
+              <a class="footer-contacts__icon-link" href="#"
+                ><img
+                  class="footer-contacts__icon"
+                  src="./img/icon-fb.svg"
+                  alt=""
+              /></a>
+              <a class="footer-contacts__icon-link" href="#"
+                ><img
+                  class="footer-contacts__icon"
+                  src="./img/icon-vk.svg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <!-- /.footer-contacts -->
+        </div>
+        <!-- /.footer-inner -->
+        <div class="footer-bottom">
+          <div class="footer-bottom__info">
+            <p class="footer-bottom__info-text">
+              © SaintShoes- интернет магазин баскетбольных кроссовок и
+              экипировки в Санкт-Петербурге. Доставка по всей России, 2020
+            </p>
+          </div>
+          <!-- /.footer-bottom__info -->
+        </div>
+        <!-- /.footer-bottom -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

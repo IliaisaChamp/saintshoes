@@ -1,7 +1,9 @@
-.breadcrumbs
-  height: 91px
+
 .nav
-  position: relative
+  &__wrapper
+    max-width: 1440px
+    margin: 0 auto
+    position: relative
   &__inner
     display: flex
     align-items: flex-end
@@ -51,6 +53,9 @@
   z-index: 100
   transition: $animation07
   background-color: #ffffff
+  &-container
+    position: relative
+    max-width: 1440px
   &__top
     padding: 0px 11px 40px 0
   &--active

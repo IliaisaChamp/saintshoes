@@ -12,7 +12,7 @@
   outline: none
   &__wrapper
     position: relative
-    max-width: 372px
+    width: 372px
     height: 468px
     padding-top: 17px
     &--new::after
@@ -35,8 +35,8 @@
     object-fit: cover
     &-wrapper
       margin-bottom: 10px
-      max-width: 372px
-      max-height: 320px
+      width: 372px
+      height: 320px
   &__info
     display: flex
     justify-content: space-between
@@ -58,8 +58,6 @@
       color: #000000
       background-image: url(../img/price-old.svg)
       background-repeat: no-repeat
-    &--new
-      color: $theme-color
   &__basket
     position: absolute
     bottom: 0
@@ -97,9 +95,8 @@
       background-repeat: no-repeat
       background-position: center
       background-size: cover
-      width: 53px
-      height: 45px
+      width: 100%
+      height: 100%
       transition: $animation05
     &--active::after
       background-image: url(../img/favorites-active.svg)
-      transition: $animation05

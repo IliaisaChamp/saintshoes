@@ -1,0 +1,115 @@
+@keyframes rotation
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+.catalog-item
+  display: inline-block
+  width: 100%
+  height: 100%
+  cursor: pointer
+  outline: none
+  &__wrapper
+    position: relative
+    width: 251px
+    height: 374px
+    margin-bottom: 30px
+    &--new::after
+      position: absolute
+      content: ''
+      top: 0
+      right: 0
+      width: 76px
+      height: 78px
+      background-image: url(../img/new.png)
+      background-repeat: no-repeat
+      z-index: 10
+      animation-name: rotation
+      animation-duration: 5s
+      animation-iteration-count: infinite
+      animation-timing-function: linear
+  &:hover
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+    border-radius: 25px
+    overflow: hidden   
+    transition: $animation05 
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    &-wrapper
+      margin-bottom: 10px
+      width: 250px
+      height: 250px
+  &__info
+    display: flex
+    justify-content: space-between
+  &__text
+    max-width: 160px
+    max-height: 54px
+    font-weight: normal
+    font-size: 16px
+    line-height: 27px
+    display: -webkit-box
+    overflow: hidden
+    text-overflow: ellipsis
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+  &__cost
+    display: flex
+    flex-direction: column
+  &__price
+    font-weight: bold
+    font-size: 22px
+    line-height: 33px
+    color: $theme-color
+    &--old
+      color: #000000
+      background-image: url(../img/price-old.svg)
+      background-repeat: no-repeat
+    &--new
+      color: $theme-color
+  &__basket
+    position: absolute
+    bottom: 0
+    right: 0
+    padding: 6px 23px 3px 27px
+    font-weight: bold
+    font-size: 20px
+    line-height: 33px
+    text-align: center
+    border: 2.5px solid $theme-color
+    border-radius: 25px
+    background-color: transparent
+    cursor: pointer
+    outline: none
+    z-index: 10
+  &__favorite
+    position: absolute
+    padding: 0
+    bottom: 0
+    left: 0
+    width: 45px
+    height: 39px
+    background-color: transparent
+    cursor: pointer
+    outline: none
+    border: none
+    z-index: 10
+    transition: $animation07
+    &::after
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      background-image: url(../img/favorites.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      width: 45px
+      height: 39px
+      transition: $animation05
+    &--active::after
+      background-image: url(../img/favorites-active.svg)
+      transition: $animation05

@@ -1,0 +1,244 @@
+.breadcrumbs
+  padding: 40px 0 41px 0
+  &__list
+    &-item
+      display: inline-block
+      position: relative
+      padding-right: 24px
+      margin-right: 15px
+      font-weight: normal
+      font-size: 16px
+      line-height: 19px
+      &::after
+        position: absolute
+        content: ''
+        width: 6px
+        height: 12px
+        right: 0
+        top: 2px
+        background-image: url(../img/arrow-horisontal.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+      &:last-child::after
+        display: none
+
+.catalog
+  &__container
+    display: flex
+    justify-content: space-between
+    max-width: 1440px
+    margin: 0 auto
+    padding-right: 143px
+    padding-bottom: 80px
+  &-holder
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__aside
+    width: 480px
+    height: 1088px
+    border: 1.5px solid $theme-color
+  &-main
+    display: flex
+    flex-direction: column
+    width: 785px
+  &__title
+    font-weight: bold
+    font-size: 24px
+    line-height: 39px
+    text-align: center
+    margin-bottom: 30px
+    margin-top: 100px
+  &__button
+    &-dropdown
+      margin: 0 auto
+      margin-top: 80px
+      width: 250px
+      padding: 7px 43px 6px 43px
+      font-weight: bold
+      font-size: 22px
+      line-height: 33px
+      text-align: center
+      border: 2.5px solid $theme-color
+      border-radius: 25px
+      background-color: transparent
+      cursor: pointer
+      outline: none
+  &-about
+    padding: 40px 0 259px 0
+    border-top: 1.5px solid $theme-color
+    &__inner
+      position: relative
+      height: 503px
+      display: flex
+      justify-content: space-between
+    &__info
+      flex-shrink: 0
+      max-width: 568px
+      height: 100%
+      transition: $animation07
+    &__text
+      font-size: 16px
+      line-height: 28px
+
+// .jq-selectbox
+//   &__select
+//     border: 2.5px solid $theme-color
+//     height: 50px
+//     width: 250px
+//     padding: 10px 10px 7px 10px
+//     border-radius: 0
+//     background: transparent
+//     box-shadow: none
+//     color: #333
+//     text-shadow: none
+//     &:hover
+//       background: none
+//     &-text
+//       text-align: center
+//       font-weight: normal
+//       font-size: 20px
+//       line-height: 33px
+//       color: #000000
+//       margin: 0
+//   &__trigger
+//     border: none
+//     &-arrow
+//       position: absolute
+//       content: ""
+//       background-image: url(../img/arrow-vertical.svg)
+//       background-repeat: no-repeat
+//       background-position: center
+//       top: 50%
+//       transform: translateY(-50%)
+//       right: 12px
+//       width: 16px
+//       height: 9px
+//       border: none
+//   &__dropdown
+//     position: static
+//     border: 2.5px solid $theme-color
+//     border-top: none
+//     height: 50px
+//     width: 250px
+//     padding: 10px 10px 7px 10px
+//     border-radius: 0
+//     background: transparent
+//     box-shadow: none
+//     color: #333
+//     text-shadow: none
+//     padding: 0
+//     margin: 0
+//     transition: $animation07
+
+// .jq-selectbox.opened .jq-selectbox__select
+//   border: 2.5px solid $theme-color
+
+// .jq-selectbox.focused .jq-selectbox__select
+//   border: 2.5px solid $theme-color
+
+// .jq-selectbox li
+//   background-color: #ffffff
+//   padding: 10px 0 7px 25px
+//   font-weight: normal
+//   font-size: 20px
+//   line-height: 33px
+//   border-bottom: 2.5px solid $theme-color
+
+// .jq-selectbox li::last-shild
+//   border-bottom: none
+
+// .jq-selectbox li:hover
+//   background-color: $theme-color
+
+// .jq-selectbox ul
+//   max-height: 100% !important
+
+// .jq-selectbox.opened .jq-selectbox__trigger-arrow
+//   transform: rotate(180deg)
+//   transition: $animation05
+
+.sneakers-gallery
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  z-index: 9
+  &__item
+    position: absolute
+    z-index: 10
+    opacity: 0.7
+    transition: $animation2
+    &-1
+      width: 380px
+      top: -220px
+      left: -142px
+      z-index: 12
+      &--hover
+        top: 90px
+        left: 50%
+        width: 215px
+        transition: $animation2
+        opacity: 1
+    &-2
+      width: 748px
+      top: -155px
+      left: 180px
+      z-index: 11
+      &--hover
+        top: -22px
+        width: 217px
+        left: 742px
+        opacity: 1
+    &-3
+      top: -208px
+      right: -97px
+      width: 325px
+      z-index: 10
+      &--hover
+        top: -30px
+        right: 52px
+        width: 191px
+        opacity: 1
+
+    &-4
+      top: 330px
+      right: 142px
+      z-index: 8
+      &--hover
+        top: -12px
+        width: 250px
+        right: -148px
+        opacity: 1
+    &-5
+      top: 9px
+      left: -38px
+      width: 285px
+      z-index: 9
+      &--hover
+        top: 242px
+        left: 847px
+        width: 250px
+        opacity: 1
+    &-6
+      width: 299px
+      top: -155px
+      left: 630px
+      z-index: 15
+      &--hover
+        top: 362px
+        left: 618px
+        width: 319px
+        opacity: 1
+    &-7
+      top: 144px
+      width: 255px
+      right: -141px
+      z-index: 11
+      &--hover
+        top: 350px
+        right: -96px
+        width: 250px
+        opacity: 1

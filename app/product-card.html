@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Saintshoes- баскетбольный магазин</title>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="#">
+          <img class="logo__img" src="./img/logo.png" alt="Image: logo" />
+        </a>
+        <div class="header__inner">
+          <div class="header__info">
+            <a class="header__phone" href="tel:+78122427571"
+              >+7 (812) 242 7571</a
+            >
+            <p class="header__adress">СПб, Левашовский пр. 11/7</p>
+            <p class="header__working">Пн-Пт: 11-21ч, Сб-Вс: 10-19ч</p>
+          </div>
+
+          <div class="header__panel">
+            <form class="search header__search" action="#">
+              <input class="search__input" type="search" />
+              <svg
+                class="search__img"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="black"
+              >
+                <path
+                  d="M9 17.549C13.4183 17.549 17 13.9142 17 9.43044C17 4.94669 13.4183 1.31189 9 1.31189C4.58172 1.31189 1 4.94669 1 9.43044C1 13.9142 4.58172 17.549 9 17.549Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.9999 19.5786L14.6499 15.1642"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </form>
+
+            <ul class="user-list">
+              <li class="user-list__item">
+                <a class="user-list__link" href="#"
+                  ><img
+                    class="user-list__img user-list__location"
+                    src="./img/location.svg"
+                    alt="Icon: location"
+                /></a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#"
+                  ><img
+                    class="user-list__img user-list__user"
+                    src="./img/user.svg"
+                    alt="Icon: user"
+                /></a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#"
+                  ><img
+                    class="user-list__img user-list__favorites"
+                    src="./img/favorites.svg"
+                    alt="Icon: favorites"
+                /></a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">
+                  <img
+                    class="user-list__basket--full"
+                    src="./img/icon-ball.svg"
+                    alt="Icon: basket"
+                  />
+                  <img
+                    class="user-list__img user-list__basket"
+                    src="./img/basket.svg"
+                    alt="Icon: basket"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.header__inner -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__list-item">
+            <a class="breadcrumbs__list-link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a class="breadcrumbs__list-link" href="#"
+              >Баскетбольные кроссовки
+            </a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <span class="breadcrumbs__list-link">
+              Jordan 33 Future of Flight
+            </span>
+          </li>
+        </ul>
+        <!-- /.breadcrumbs-list -->
+      </div>
+    </section>
+    <!-- /.breadcramps -->
+
+    <div class="nav__wrapper">
+      <div class="nav">
+        <div class="container">
+          <div class="nav__inner">
+            <p class="nav__title">Каталог товаров</p>
+            <div class="nav-btn">
+              <div class="nav-btn__line"></div>
+              <div class="nav-btn__line"></div>
+              <div class="nav-btn__line"></div>
+            </div>
+          </div>
+          <nav class="menu">
+            <div class="menu__top">
+              <p class="nav__title">Каталог товаров</p>
+              <div class="close-btn"></div>
+            </div>
+            <div class="menu__list">
+              <ul>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Sale</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Баскетбольные кроссовки</a>
+                </li>
+                <li class="menu__item menu__item--hover">
+                  <a class="menu__link" href="#">Баскетбольная форма</a>
+                  <ul class="menu-dropdown">
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Майки</a>
+                    </li>
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Шорты</a>
+                    </li>
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Компрессионное белье</a>
+                    </li>
+                    <li class="menu__item menu__item-dropdown">
+                      <a href="#" class="menu__link">Разминочная форма</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Спортивная одежда</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Аксессуары</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Информация</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.nav -->
+
+    <section class="product-card">
+      <div class="container">
+        <div class="product-card__inner">
+          <div class="product-card__gallery">
+            <div class="product-card__gallery-item">
+              <img
+                class="product-card__gallery-img"
+                src="./img/content/jordan33-1.png"
+                alt=""
+              />
+            </div>
+            <div class="product-card__gallery-item">
+              <img
+                class="product-card__gallery-img"
+                src="./img/content/jordan33-2.png"
+                alt=""
+              />
+            </div>
+            <div class="product-card__gallery-item">
+              <img
+                class="product-card__gallery-img"
+                src="./img/content/jordan33-3.png"
+                alt=""
+              />
+            </div>
+            <div class="product-card__gallery-item">
+              <img
+                class="product-card__gallery-img"
+                src="./img/content/jordan33-4.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- /.product-card__gallery -->
+          <div class="product-card__info">
+            <form class="product-form" action="">
+              <div class="product-card__info-top">
+                <div class="product-card__cost">
+                  <h1 class="product-card__title">
+                    Jordan 33 Futu re of Flight
+                  </h1>
+                  <div class="product-card__cost-inner">
+                    <p class="product-card__price">15 290 ₽</p>
+                  </div>
+                </div>
+                <div class="product-card__cost-btn">
+                  <button class="product-card__favorite"></button>
+                  <div class="product-card__vol">
+                    <button class="product-card__vol-min product-card__vol-btn">
+                      -
+                    </button>
+                    <input class="product-card__vol-total" value="1" />
+                    <button class="product-card__vol-pls product-card__vol-btn">
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- /.product-card__info-top -->
+              <div class="product-card__size">
+                <div class="product-card__size-inner">
+                  <p class="product-card__size-text">Размеры</p>
+                  <ul class="product-card__size-list">
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">7</p>
+                        <input class="product-card__size-val" value="7" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">7,5</p>
+                        <input class="product-card__size-val" value="7,5" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">8</p>
+                        <input class="product-card__size-val" value="8" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">8,5</p>
+                        <input class="product-card__size-val" value="8,5" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">9</p>
+                        <input class="product-card__size-val" value="9" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">9,5</p>
+                        <input class="product-card__size-val" value="9,5" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">10</p>
+                        <input class="product-card__size-val" value="10" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">10,5</p>
+                        <input class="product-card__size-val" value="10,5" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">11</p>
+                        <input class="product-card__size-val" value="11" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">11,5</p>
+                        <input class="product-card__size-val" value="11,5" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">12</p>
+                        <input class="product-card__size-val" value="12" />
+                      </label>
+                    </li>
+
+                    <li class="product-card__size-item">
+                      <label>
+                        <p class="product-card__size-num">13</p>
+                        <input class="product-card__size-val" value="13" />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.product-card__size -->
+
+              <a class="product-card__size-link" href="#">Таблица размеров</a>
+
+              <div class="product-card__buttons">
+                <button class="product-card__basket-btn">В корзину</button>
+                <button class="product-card__pre-btn">Предзаказ</button>
+              </div>
+              <!-- /.product-card__buttons -->
+            </form>
+            <!-- /.product-form -->
+            <p class="product-card__notice">
+              Если вы не нашли подходящий размер - сделайте предзаказ или
+              позвоните нам по телефону +7 (812) 242 7571
+            </p>
+          </div>
+          <!-- /.product-card__info -->
+        </div>
+        <!-- /.product-card__inner -->
+
+        <div class="product-card__desc">
+          <div class="product-card__desc-inner">
+            <div class="product-card__tabs">
+              <a class="product-card__tabs-item" href="#tab-1">Описание</a>
+              <a class="product-card__tabs-item product-card__tabs-item--active" href="#tab-2">Доставка</a>
+              <a class="product-card__tabs-item" href="#tab-3">Оплата</a>
+              <a class="product-card__tabs-item" href="#tab-4">Гарантия</a>
+            </div>
+            <!-- /.product-card__tabs -->
+            <div class="product-card__content">
+              <div id="tab-1" class="product-card__content-item product-card__content-item--active">
+                Описание Jordan 33 Futu re of Flight
+              </div>
+              <div id="tab-2" class="product-card__content-item ">
+                Мы осуществляем доставку кроссовок, формы и других товаров по
+                всей территории РФ при помощи логистической компании СДЭК. Вот
+                основные города доставки нашего интернет-магазина: Москва,
+                Санкт-Петербург, Екатеринбург, Новосибирск, Нижний Новгород,
+                Краснодар, Ростов-на-Дону, Омск, Иркутск, Челябинск,
+                Калининград, Пермь, Хабаровск, Петропавловск-Камчатский и
+                многие-многие другие. <br> 
+                Подробнее читайте в нашем разделе 
+                <a class="product-card__content-link" href="#">Доставка</a>
+              </div>
+              <div id="tab-3" class="product-card__content-item">
+                На нашем сайте Вы можете оплатить покупку двумя способами: 
+                <br>
+                1.При получении заказа наличными курьеру. Мы сотрудничаем с
+                компанией СДЭК, подробнее на странице доставки 
+                <br>
+                2. Онлайн сразу
+                после оформления заказа при помощи сервиса Яндекс.Касса. Здесь
+                Вам доступны оплата любой картой и яндекс.деньгами.
+              </div>
+              <div id="tab-4" class="product-card__content-item">
+                Магазин SaintShoes работает с 2017 года. В нашем магазине
+                продаётся только оригинальная и сертифицированная продукция от
+                ведущих мировых производителей – Nike, Jordan. Мы не продаём
+                копии, подделки, или б.у. товары, только 100% оригинальную
+                продукцию. 
+                <br>
+                <br>
+                На весь ассортимент, представленный на сайте, даётся
+                гарантия 1 месяц (30 календарных дней). В течение этого срока Вы
+                можете вернуть или обменять продукцию при наличии заводского
+                брака. В спорных случаях товар будет направлен на экспертизу, по
+                итогам которой будет вынесено решение.
+              </div>
+            </div>
+            <!-- /.product-card__tabs-content -->
+          </div>
+          <!-- /.product-card__desc-inner -->
+        </div>
+        <!-- /.product-card__desc -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.product-card -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-menu">
+            <nav class="footer-menu__item">
+              <h3 class="footer-menu__title">каталог</h3>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#"
+                    >Баскетбольные кроссовки</a
+                  >
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#"
+                    >Разминочная форма для баскетбола</a
+                  >
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Баскетбольная форма</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Компрессионное белье</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Спортивная одежда</a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="footer-menu__item">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Доставка</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Оплата</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Контакты</a>
+                </li>
+                <li class="footer-menu__list-item">
+                  <a class="footer-menu__link" href="#">Скидки</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.footer-menu -->
+          <div class="footer-contacts">
+            <div class="footer-contacts__item">
+              <ul class="footer-contacts__list">
+                <li class="footer-contacts__list-item">
+                  <a class="footer-contacts__link" href="tel:+78122427571"
+                    >+7 (812) 242 7571</a
+                  >
+                </li>
+                <li class="footer-contacts__list-item">
+                  <a class="footer-contacts__link" href="#"
+                    >СПб, Левашовский пр. 11/7</a
+                  >
+                </li>
+                <li class="footer-contacts__list-item">
+                  <a
+                    class="footer-contacts__link"
+                    href="mailto:info@saintshoes.ru"
+                    >info@saintshoes.ru</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-contacts__item">
+              <a class="footer-contacts__icon-link" href="#"
+                ><img
+                  class="footer-contacts__icon"
+                  src="./img/icon-instagram.svg"
+                  alt=""
+              /></a>
+              <a class="footer-contacts__icon-link" href="#"
+                ><img
+                  class="footer-contacts__icon"
+                  src="./img/icon-fb.svg"
+                  alt=""
+              /></a>
+              <a class="footer-contacts__icon-link" href="#"
+                ><img
+                  class="footer-contacts__icon"
+                  src="./img/icon-vk.svg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <!-- /.footer-contacts -->
+        </div>
+        <!-- /.footer-inner -->
+        <div class="footer-bottom">
+          <div class="footer-bottom__info">
+            <p class="footer-bottom__info-text">
+              © SaintShoes- интернет магазин баскетбольных кроссовок и
+              экипировки в Санкт-Петербурге. Доставка по всей России, 2020
+            </p>
+          </div>
+          <!-- /.footer-bottom__info -->
+        </div>
+        <!-- /.footer-bottom -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
